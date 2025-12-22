@@ -12,7 +12,7 @@ body {
     color: black;
     width: 850px;
     height: 1110px;
-    margin: 0;
+    margin: 50px auto;
     padding: 0;
     font-family: system-ui;
     border: 3px solid;
@@ -136,7 +136,7 @@ h4 {
     height: 35px;
     width: 550px;
     border-radius: 50px 0 0 0;
-    bottom: 0px;
+    bottom: -1px;
     left: -108px;
     position: relative;
     background-color: rgb(167, 164, 164);
@@ -146,4 +146,26 @@ h4 {
 .hob {
     display: flex;
     justify-content: space-around;
+}
+
+.unique-download-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #302e4d; /* --text-black-900 */
+    color: #fdf9ff; /* --bg-black-100 */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.unique-download-btn:hover {
+    background-color: #504e70; /* --text-black-700 */
+    transform: scale(1.1);
 }
